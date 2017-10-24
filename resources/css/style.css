@@ -1,0 +1,120 @@
+html {
+  font-size: 16px;
+  font-family: "PT Sans";
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 960px;
+}
+
+/**********************************************
+ Header section
+***********************************************/
+
+header {
+  background-color: snow;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-family: "Comfortaa";
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 2rem;
+}
+
+.logo.strong {
+  font-weight: 700;
+  color: #333333;
+}
+
+.logo.light {
+  font-weight: 300;
+  color: gray;
+}
+
+header nav {
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+header nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+header nav a:hover {
+  color: blue;
+}
+
+/**********************************************
+ Top content section
+***********************************************/
+
+.content-container.top {
+  background-color: lightgray;
+  width: 100%;
+  justify-content: center;
+}
+
+.top .container {
+  padding: 2rem 1.5rem;
+}
+
+.top .img-container {
+  width: 60%;
+  overflow: hidden;
+}
+
+.top .img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.top .text-container {
+  margin-left: 1.5rem;
+  max-width: 40%;
+  justify-content: center;
+}
+
+.text h1,
+.text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.text h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.text a {
+  display: inline-block;
+  background-color: #333333;
+  color: snow;
+  width: 80%;
+  padding: 0.5rem 0;
+  text-align: center;
+}
