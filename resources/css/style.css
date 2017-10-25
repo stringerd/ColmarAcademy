@@ -230,7 +230,8 @@ header nav a:hover {
   align-items: center;
 }
 
-.course-title {
+.course-title,
+.thesis-title {
   font-size: 3rem;
   font-weight: 700;
   color: #333333;
@@ -290,4 +291,86 @@ header nav a:hover {
 .course h6,
 .course p {
   font-size: 1rem;
+}
+
+/**********************************************
+ Thesis section
+***********************************************/
+
+.thesis {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.thesis-primary-exhibit {
+  width: 60%;
+  margin: 0 1.5rem;
+}
+
+.thesis-text-container {
+  color: #595959;
+}
+
+.thesis-text-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.thesis-text-container p {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.thesis-exhibit {
+  padding: 1rem;
+}
+
+.thesis-img-container {
+  width: 35%;
+  overflow: hidden;
+}
+
+.thesis-img-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.thesis-side-text {
+  width: 65%;
+  padding-left: 1rem;
+  justify-content: center;
+}
+
+.thesis-side-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/**********************************************
+ Footer
+***********************************************/
+
+footer {
+  padding: 1rem 1.5rem;
+  font-size: 0.825rem;
+  color: #595959;
+  border-top: 1px solid #dddddd;
+}
+
+footer .foot-logo {
+  flex-grow: 1;
+}
+
+footer .foot-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #595959;
+}
+
+.foot-links a:last-child {
+  margin-right: 0;
 }
