@@ -13,7 +13,7 @@ html {
 }
 
 .container {
-  width: 960px;
+  width: 1024px;
 }
 
 /**********************************************
@@ -68,14 +68,27 @@ header nav a:hover {
  Top content section
 ***********************************************/
 
-.content-container.top {
+.lightgray {
   background-color: lightgray;
+}
+
+.content-container {
   width: 100%;
   justify-content: center;
 }
 
-.top .container {
-  padding: 2rem 1.5rem;
+.top .container,
+.mid .container {
+  padding: 0 0 2rem 1.5rem;
+}
+
+.top .img-container,
+.top .text-container,
+.mid .info-container {
+  padding-top: 2rem;
+  /* .mid .info-blocks has same offset, but needs to be
+  included with .info-block code below */
+
 }
 
 .top .img-container {
@@ -83,15 +96,16 @@ header nav a:hover {
   overflow: hidden;
 }
 
-.top .img-container img {
+.top .img-container img,
+.mid .img-container img {
   width: 100%;
   height: auto;
   display: block;
 }
 
 .top .text-container {
-  margin-left: 1.5rem;
-  max-width: 40%;
+  padding-left: 1.5rem;
+  width: 40%;
   justify-content: center;
 }
 
@@ -117,4 +131,88 @@ header nav a:hover {
   width: 80%;
   padding: 0.5rem 0;
   text-align: center;
+}
+
+/**********************************************
+ Middle content section
+***********************************************/
+
+.mid .info-container {
+  width: 60%;
+  margin-right: 1.5rem;
+}
+
+.mid .img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mid .info-container h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.mid .info-container p {
+  padding: 1.5rem 0;
+  line-height: 1.2;
+}
+
+.mid .info-container .quote-source {
+  font-weight: bold;
+  font-size: 0.825rem;
+}
+
+.mid .info-blocks {
+  width: 40%;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding-top: 1rem;
+  /* Add 1rem here to match total offset of adjacent container */
+}
+
+.info-block {
+  padding: 1rem 0.1rem 1rem 1rem;
+  border-bottom: 3px solid #dddddd;
+}
+
+.info-block .info-img {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+
+.info-block .info-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info-block .info-text {
+  width: 65%;
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.info-block .info-text-content h3,
+.info-block .info-text-content p {
+  margin-bottom: 0.625rem;
+}
+
+.info-block .info-text-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.info-block .info-text-content {
+  font-size: 0.9rem;
+}
+
+.info-block .info-text-content a {
+  color: royalblue;
+}
+
+.info-block:hover {
+  background-color: #dddddd;
+  cursor: pointer;
 }
